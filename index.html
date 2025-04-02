@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sneaker Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .popup-credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="ai-chat-box">
+            <img src="ai.png" alt="AI Avatar" id="aiImage" width="10%">
+            <div class="ai-chat-area">
+                Hello! I am Sneaker Bot, how can I assist you?
+            </div>
+        </div>
+    </div>
+    <div class="prompt-area">
+        <input type="text" id="prompt" placeholder="Message...">
+        <button id="image">
+            <img src="img.svg" alt="Upload Image">
+            <input type="file" accept="image/*" hidden>
+        </button>
+        <button id="submit">
+            <img src="submit.svg" alt="Send">
+        </button>
+    </div>
+
+    <div class="popup-credit">Made by Dev Adarsh & Surbhi</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
